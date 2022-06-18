@@ -30,7 +30,7 @@
   </properties>
 
   <dependencies>
-    <!-- Recomend use https://search.maven.org/ for dependencies -->
+    <!-- Recommend using https://search.maven.org/ for dependencies -->
 
     <!-- Abuben dependencies -->
 
@@ -108,6 +108,9 @@
         <excludes>
           <exclude>plugin.json</exclude>
         </excludes>
+      </resource>
+      <resource>
+        <directory>src/resources</directory>
       </resource>
     </resources>
 
