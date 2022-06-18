@@ -8,13 +8,15 @@
 4. Configure the parameters in `pom.xml`, <properties> section.
 5. Bob’s your uncle!
 
+**Note!** `src/resources/plugin.json` contains templates that are used by maven to substitute from pom.xml, no need to edit plugin.json!
+
 # For Visual Studio Code
 
 1. Go to settings and change following parameters:
 * java.eclipse.downloadSources to true
 * java.maven.downloadSources to true
 
-2. Open your settings.xml file ~/.m2/settings.xml (create it if it doesn't exist) and  put folowing content:
+2. Open your settings.xml file `~/.m2/settings.xml` (create it if it doesn't exist) and  put folowing content:
 ```
 <settings>
     <profiles>

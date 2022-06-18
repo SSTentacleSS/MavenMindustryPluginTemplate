@@ -13,7 +13,7 @@ import mindustry.mod.Plugin;
 public class Main extends Plugin {
 
     /**
-     * who really needs to run the plugin without a server?
+     * Who really needs to run the plugin without a server?
      */
     public static void main(String[] args) {
         throw new Error("This plugin cannot be run outside the server!");
