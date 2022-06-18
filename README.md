@@ -2,10 +2,10 @@
 
 ### **Setup**
 
-1. Clone this repository first
-2. Install java (if not already installed)
-3. Use './mvnw wrapper:wrapper' in this dirrectory (if you don't have maven installed globally)
-4. Configure the parameters in `pom.xml`, <properties> section
+1. Clone this repository first.
+2. Install java (if not already installed).
+3. Use './mvnw wrapper:wrapper' in this dirrectory (if you don't have maven installed globally).
+4. Configure the parameters in `pom.xml`, <properties> section.
 5. Bob’s your uncle!
 
 ### **For Visual Studio Code**
@@ -35,15 +35,15 @@
 
 ### **Basic Usage**
 
-See `src/tentacle/mindustry/example/Main.java` for some basic commands and event handlers.  
-Every main plugin class must extend `Plugin`
+See `src/tentacle/mindustry/example/Main.java` for some basic commands and event handlers.
+Every main plugin class must extend `Plugin`.
 
 ### **Building a Jar**
 
-Use './mvnw clean package' (or use the built-in editors 'task explorer' -> 'package' task)
-Output jar should be in `target/name_of_plugin.jar`
+Use `./mvnw clean package` (or use the built-in editors 'task explorer' -> 'package' task).
+Output jar should be in `target/name_of_plugin.jar`.
 
 ### **Installing**
 
-Simply place the output jar from the step above in your server's `config/mods` directory and restart the server
-List your currently installed plugins/mods by running the `mods` command
+Simply place the output jar from the step above in your server's `config/mods` directory and restart the server.
+List your currently installed plugins/mods by running the `mods` command.
