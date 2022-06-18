@@ -7,6 +7,7 @@ import mindustry.Vars;
 import mindustry.game.EventType;
 import mindustry.gen.Call;
 import mindustry.gen.Groups;
+import mindustry.gen.Player;
 import mindustry.mod.Plugin;
 
 public class Main extends Plugin {
@@ -47,8 +48,15 @@ public class Main extends Plugin {
 
     @Override
     public void registerClientCommands(CommandHandler handler) {
-        handler.register("ping", "Pong!", (runner, a) -> {
-            
+        handler.<Player>register("ping", "Pong!", (args, player) -> {
+            player.sendMessage("PONG!!!");
+        });
+    }
+
+    @Override
+    public void registerServerCommands(CommandHandler handler) {
+        handler.register("ping", "Pong!", (args) -> {
+            Log.info("PONG!!!");
         });
     }
 }
