@@ -96,14 +96,14 @@
     <sourceDirectory>src/java</sourceDirectory>
     <resources>
       <resource>
-        <directory>src/generated</directory>
+        <directory>src/resources</directory>
         <filtering>true</filtering>
         <includes>
           <include>plugin.json</include>
         </includes>
       </resource>
       <resource>
-        <directory>src/generated</directory>
+        <directory>src/resources</directory>
         <filtering>false</filtering>
         <excludes>
           <exclude>plugin.json</exclude>
