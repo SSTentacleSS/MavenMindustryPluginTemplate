@@ -1,0 +1,36 @@
+name: Build Plugin
+ 
+on: [push, pull_request]
+ 
+jobs:
+  compile:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        java: [ 16 ]
+    name: Java ${{ matrix.java }} compile
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v2
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'zulu'
+          java-version: ${{ matrix.java }}
+      - name: Caching dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+      - name: Update Maven Wrapper
+        working-directory: project
+        run: mvnw wrapper:wrapper
+      - name: Build Project
+        working-directory: project
+        run: mvnw package
+      - name: Upload Maven build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: project/target/**.jar
