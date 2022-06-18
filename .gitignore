@@ -10,4 +10,3 @@ buildNumber.properties
 .vscode/
 .classpath
 .project
-src/resources/plugin.json
