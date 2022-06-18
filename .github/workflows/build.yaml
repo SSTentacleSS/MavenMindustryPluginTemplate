@@ -25,9 +25,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
       - name: Update Maven Wrapper
-        run: mvnw wrapper:wrapper
+        run: ./mvnw wrapper:wrapper
       - name: Build Project
-        run: mvnw package
+        run: ./mvnw package
       - name: Upload Maven build artifact
         uses: actions/upload-artifact@v3
         with:
