@@ -1,6 +1,6 @@
-# MavenMindustryPluginTemplate
+# **MavenMindustryPluginTemplate**
 
-### **Setup**
+# Setup
 
 1. Clone this repository first.
 2. Install java (if not already installed).
@@ -8,7 +8,7 @@
 4. Configure the parameters in `pom.xml`, <properties> section.
 5. Bob’s your uncle!
 
-### **For Visual Studio Code**
+# For Visual Studio Code
 
 1. Go to settings and change following parameters:
 * java.eclipse.downloadSources to true
@@ -33,17 +33,26 @@
 </settings>
 ```
 
-### **Basic Usage**
+# Basic Usage
 
 See `src/tentacle/mindustry/example/Main.java` for some basic commands and event handlers.
 Every main plugin class must extend `Plugin`.
 
-### **Building a Jar**
+# Building a Jar
 
 Use `./mvnw clean package` (or use the built-in editors 'task explorer' -> 'package' task).
-Output jar should be in `target/name_of_plugin.jar`.
+The output file will be in two versions
 
-### **Installing**
+* `target/name_of_plugin.jar` - working plugin, with the necessary libraries included by the user
+* `target/name_of_plugin-lib.jar` - the library, partially incapable of working because it has no required dependencies, is intended for inclusion in another plugin as an "lightweight" optional dependency
+
+# Installing
 
 Simply place the output jar from the step above in your server's `config/mods` directory and restart the server.
 List your currently installed plugins/mods by running the `mods` command.
+
+
+
+## **A Few Words From the Developer**
+
+This project is completely focused on the convenience of your work when creating a plugin, if you have any ideas or suggestions for improving the code - always happy to hear your ideas, friends.
