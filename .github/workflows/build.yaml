@@ -29,4 +29,6 @@ jobs:
       - name: Upload Maven build artifact
         uses: actions/upload-artifact@v3
         with:
+          name: builded
           path: target/**.jar
+          if-no-files-found: error
