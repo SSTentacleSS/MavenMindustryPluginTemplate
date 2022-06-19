@@ -1,6 +1,6 @@
 # **MavenMindustryPluginTemplate**
 
-# RoadMap for 1.1.2 release
+# RoadMap for new release
 
 - [ ] Add mindustry debugger (pending update of maven repositories)
 
