@@ -1,5 +1,9 @@
 # **MavenMindustryPluginTemplate**
 
+# RoadMap for 1.1.2 release
+
+- [ ] Add mindustry debugger (pending update of maven repositories)
+
 # Setup
 
 1. Clone this repository first.
