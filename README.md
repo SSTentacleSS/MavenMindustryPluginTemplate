@@ -2,7 +2,7 @@
 
 # RoadMap for new release
 
-- [ ] Add mindustry debugger (pending update of maven repositories)
+- [x] Add mindustry debugger (Added, use `./mvnw mindustry:debug` for debugging)
 
 # Setup
 
