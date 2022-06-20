@@ -55,7 +55,7 @@ The output file will be in two versions
 
 # Debugging
 
-run `mvn mindustry:debug`
+run `./mvnw mindustry:debug`
 
 # Installing
 
