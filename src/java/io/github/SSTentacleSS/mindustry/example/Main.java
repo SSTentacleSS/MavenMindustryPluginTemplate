@@ -1,4 +1,4 @@
-package tentacle.mindustry.example;
+package io.github.SSTentacleSS.mindustry.example;
 
 import arc.Events;
 import arc.util.CommandHandler;

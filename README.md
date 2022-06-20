@@ -53,6 +53,10 @@ The output file will be in two versions
 * `target/name_of_plugin.jar` - working plugin, with the necessary libraries included by the user
 * `target/name_of_plugin-lib.jar` - the library, partially incapable of working because it has no required dependencies, is intended for inclusion in another plugin as an "lightweight" optional dependency
 
+# Debugging
+
+run `mvn mindustry:debug`
+
 # Installing
 
 Simply place the output jar from the step above in your server's `config/mods` directory and restart the server.
