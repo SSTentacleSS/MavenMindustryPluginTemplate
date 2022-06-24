@@ -2,7 +2,7 @@
 
 # RoadMap for new release
 
-- [x] Add mindustry debugger (Added, use `./mvnw mindustry:debug` for debugging, see https://github.com/SSTentacleSS/MindustryMavenPlugin for details)
+- [x] Add mindustry debugger (Added, use `./mvnw mindustry:debug` for debugging, see [MindustryMavenPlugin](https://github.com/SSTentacleSS/MindustryMavenPlugin) for details)
 - [x] **Fix "No covered by lifecycle compile" error**
 
 # Setup
