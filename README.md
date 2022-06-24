@@ -3,7 +3,7 @@
 # RoadMap for new release
 
 - [x] Add mindustry debugger (Added, use `./mvnw mindustry:debug` for debugging)
-- [ ] **Fix "No covered by lifecycle compile" error**
+- [x] **Fix "No covered by lifecycle compile" error**
 
 # Setup
 
