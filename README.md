@@ -15,31 +15,6 @@
 
 **Note!** `src/resources/plugin.json` contains templates that are used by maven to substitute from pom.xml, no need to edit plugin.json!
 
-# For Visual Studio Code
-
-1. Go to settings and change following parameters:
-* java.eclipse.downloadSources to true
-* java.maven.downloadSources to true
-
-2. Open your settings.xml file `~/.m2/settings.xml` (create it if it doesn't exist) and  put folowing content:
-```
-<settings>
-    <profiles>
-        <profile>
-            <id>downloadSources</id>
-            <properties>
-                <downloadSources>true</downloadSources>
-                <downloadJavadocs>true</downloadJavadocs>
-            </properties>
-        </profile>
-    </profiles>
-
-    <activeProfiles>
-        <activeProfile>downloadSources</activeProfile>
-    </activeProfiles>
-</settings>
-```
-
 # Basic Usage
 
 See `src/tentacle/mindustry/example/Main.java` for some basic commands and event handlers.
