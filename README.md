@@ -22,7 +22,7 @@ Every main plugin class must extend `Plugin`.
 
 # Building a Jar
 
-Use `./mvnw clean package` (or use the built-in editors 'task explorer' -> 'package' task).
+Use `./mvnw clean package` or `mvn clean package` (if you have maven installed globally) or the built-in editors 'task explorer' -> 'package' task.
 The output file will be in two versions
 
 * `target/name_of_plugin.jar` - working plugin, with the necessary libraries included by the user
@@ -30,7 +30,7 @@ The output file will be in two versions
 
 # Debugging
 
-run `./mvnw mindustry:debug`
+run `./mvnw mindustry:debug` or `mvn mindustry:debug` (if you have maven installed globally)
 
 # Installing
 
