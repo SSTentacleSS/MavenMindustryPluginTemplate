@@ -11,9 +11,8 @@
 
 1. Clone this repository first.
 2. Install java (if not already installed).
-3. Use './mvnw wrapper:wrapper' in this dirrectory (if you don't have maven installed globally).
-4. Configure the parameters in `pom.xml`, <properties> section.
-5. Bob’s your uncle!
+3. Configure the parameters in `pom.xml`, <properties> section.
+4. Bob’s your uncle!
 
 **Note!** `src/resources/plugin.json` contains templates that are used by maven to substitute from pom.xml, no need to edit plugin.json!
 
