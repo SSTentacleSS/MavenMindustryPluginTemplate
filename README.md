@@ -5,7 +5,13 @@
 - [ ] Nothing here yet, but you can fix it by opening your offer in the Pull Requests section!
 
 **Made**:
-- [x] Debugger, use `./mvnw mindustry:debug` for debugging, see [MindustryMavenPlugin](https://github.com/SSTentacleSS/MindustryMavenPlugin) for details.
+- [x] Debugger, use `mvn mindustry:debug` for debugging, see [MindustryMavenPlugin](https://github.com/SSTentacleSS/MindustryMavenPlugin) for details.
+
+# Conditionality
+
+* Instead of `mvn` can be used 
+    + Windows: `.\\mvnw.cmd`, `.\\mvnw`
+    + U*ix: `./mvnw.sh`
 
 # Setup
 
@@ -18,20 +24,20 @@
 
 # Basic Usage
 
-See `src/tentacle/mindustry/example/Main.java` for some basic commands and event handlers.
+See `src/java/io/github/SSTentacleSS/mindustry/example/Main.java` for some basic commands and event handlers.
 Every main plugin class must extend `Plugin`.
 
 # Building a Jar
 
-Use `./mvnw clean package` or `mvn clean package` (if you have maven installed globally) or the built-in editors 'task explorer' -> 'package' task.
-The output file will be in two versions
+1. Use `mvn clean package`
+2. The output file will be in two versions
 
 * `target/name_of_plugin.jar` - working plugin, with the necessary libraries included by the user
 * `target/name_of_plugin-lib.jar` - the library, partially incapable of working because it has no required dependencies, is intended for inclusion in another plugin as an "lightweight" optional dependency
 
 # Debugging
 
-run `./mvnw mindustry:debug` or `mvn mindustry:debug` (if you have maven installed globally)
+Run `mvn mindustry:debug`
 
 # Installing
 
