@@ -24,7 +24,7 @@
     <project.name>ExamplePlugin</project.name> <!-- Plugin name -->
     <project.description>A maven plugin to demonstrate some basic features</project.description> <!-- Plugin description -->
     <developedBy>SSTentacleSS</developedBy> <!-- Developer/Developers team name -->
-    <mindustryVersion>v135</mindustryVersion> <!-- Version of mindustry libs -->
+    <mindustryVersion>v138</mindustryVersion> <!-- Version of mindustry libs -->
     <mainClass>${project.groupId}.${project.artifactId}.Main</mainClass> <!-- Main class, loaded by server -->
     <finalName>${project.name}</finalName> <!-- Final jar name-->
   </properties>

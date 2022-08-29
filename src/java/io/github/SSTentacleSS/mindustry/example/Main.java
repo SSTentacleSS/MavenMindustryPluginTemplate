@@ -21,7 +21,7 @@ public class Main extends Plugin {
 
     /**
      * It is recommended not to use the constructor due to multiple
-     * multiple construct calls and possible errors when loading server
+     * construct calls and possible errors when loading server
      */
     public Main() {}
 
@@ -31,7 +31,7 @@ public class Main extends Plugin {
             String playerConnectMessage = event.player.name + " connected!";
             
             Log.info(playerConnectMessage);
-            Call.sendMessage(playerConnectMessage);
+            Call.sendMessage(playerConnectMessage); // Call - class that tell server make something, in this example - send message for all players, that player connected
         });
 
         Events.on(EventType.PlayerLeave.class, (event) -> {
