@@ -17,7 +17,7 @@
 
 1. Clone this repository first.
 2. Install java (if not already installed).
-3. Configure the parameters in `pom.xml`, <properties> section.
+3. Configure the `<project><properties></...></...>` in `pom.xml`.
 4. (Optional) Use `mvn mindustry:generate-config -Deditor=<editor>`, avilable editors: `vscode`
 4. Bob’s your uncle!
 
