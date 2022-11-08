@@ -18,7 +18,7 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           title: ${{ RELEASE_VERSION }} 
           prerelease: false
-          automatic_release_tag: latest
+          automatic_release_tag: v${{ RELEASE_VERSION }} 
           files: |
             LICENSE.txt
             target/*.jar
