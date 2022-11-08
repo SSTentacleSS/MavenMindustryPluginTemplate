@@ -15,7 +15,7 @@
 
 # Setup
 
-1. Clone this repository first.
+1. Clone/Use as template this repository first (with **all** branches!).
 2. Install java (if not already installed).
 3. Configure the `<project><properties></...></...>` in `pom.xml`.
 4. (Optional) Use `mvn mindustry:generate-config -Deditor=<editor>`, avilable editors: `vscode`
