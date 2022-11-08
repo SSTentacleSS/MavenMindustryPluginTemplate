@@ -12,21 +12,14 @@ import mindustry.mod.Plugin;
 
 public class Main extends Plugin {
 
-    /**
-     * Who really needs to run the plugin without a server?
-     */
-    public static void main(String[] args) {
-        throw new Error("This plugin cannot be run outside the server!");
-    }
-
-    /**
-     * It is recommended not to use the constructor due to multiple
-     * construct calls and possible errors when loading server
-     */
     public Main() {}
 
     @Override
     public void init() {
+        // Warning, method calls cannot be unambiguously determined!
+        // Any method can be called before or after init()
+        // The only sure way to initialize a plugin is to use the main class constructor!
+
         Events.on(EventType.PlayerJoin.class, (event) -> {
             String playerConnectMessage = event.player.name + " connected!";
             

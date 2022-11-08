@@ -1,0 +1,20 @@
+name: Publish Plugin Release
+
+on:
+  push:
+    branches:
+      - "release"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    name: Release artifacts
+    steps:
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          title: $(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+          prerelease: false
+          automatic_release_tag: latest
+          files: |
+            LICENSE.txt
+            target/*.jar
