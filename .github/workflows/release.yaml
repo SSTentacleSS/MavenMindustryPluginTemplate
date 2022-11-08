@@ -6,11 +6,23 @@ on:
       - "release"
 
 jobs:
-  release:
-    needs: build
+  build:
     runs-on: ubuntu-latest
-    name: Release artifacts
+    name: Maven build with caching
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up JDK 16
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '16'
+      - name: Restore Maven cache
+        uses: skjolber/maven-cache-github-action@v1
+        with:
+          step: restore
+      - name: Build application with Maven
+        run: mvn package
       - name: Set ENV's
         run: |
           echo "RELEASE_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)" >> $GITHUB_ENV
@@ -23,3 +35,7 @@ jobs:
           files: |
             LICENSE.txt
             target/*.jar
+      - name: Save Maven cache
+        uses: skjolber/maven-cache-github-action@v1
+        with:
+          step: save
