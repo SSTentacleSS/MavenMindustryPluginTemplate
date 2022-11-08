@@ -10,10 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Release artifacts
     steps:
+      - name: Set ENV's
+        run: |
+          echo "RELEASE_VERSION=$((mvn help:evaluate -Dexpression=project.version -q -DforceStdout))" >> $GITHUB_ENV
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          title: $(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+          title: ${{ RELEASE_VERSION }} 
           prerelease: false
           automatic_release_tag: latest
           files: |
