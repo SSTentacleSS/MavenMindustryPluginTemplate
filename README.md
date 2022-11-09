@@ -25,7 +25,7 @@
 
 # Basic Usage
 
-See [Main.java](src/java/io/github/SSTentacleSS/mindustry/example/Main.java) for some basic commands and event handlers.
+See [Main.java](https://github.com/SSTentacleSS/MavenMindustryPluginTemplate/blob/release/src/java/io/github/ss_tentacle_ss/mindustry/example/Main.java) for some basic commands and event handlers.
 Every main plugin class must extend `Plugin`.
 
 # Building a Jar
