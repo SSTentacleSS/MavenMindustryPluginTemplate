@@ -33,7 +33,7 @@ jobs:
           prerelease: false
           automatic_release_tag: v${{ env.RELEASE_VERSION }} 
           files: |
-            LICENSE.txt
+            LICENSE
             target/*.jar
             target/classes/plugin.json
       - name: Save Maven cache
