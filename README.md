@@ -2,7 +2,7 @@
 
 # RoadMap for new release
 
-- [ ] Nothing here yet, but you can fix it by opening your offer in the Pull Requests section!
+- [x] Nothing here yet, but you can fix it by opening your offer in the Pull Requests section!
 
 **Made**:
 - [x] Debugger, use `mvn mindustry:debug` for debugging, see [MindustryMavenPlugin](https://github.com/SSTentacleSS/MindustryMavenPlugin) for details.
@@ -12,10 +12,11 @@
 * Instead of `mvn` can be used 
     + Windows: `.\\mvnw.cmd`, `.\\mvnw`
     + U*ix: `./mvnw.sh`
+    + [maven-mvnd](https://github.com/apache/maven-mvnd): `mvnd`
 
 # Setup
 
-1. Clone/Use as template this repository first (with **all** branches!).
+1. Clone/Use as template this repository first (with **all** branches included!).
 2. Install java (if not already installed).
 3. Configure the `<project><properties></...></...>` in `pom.xml`.
 4. (Optional) Use `mvn mindustry:generate-config -Deditor=<editor>`, avilable editors: `vscode`
