@@ -35,6 +35,7 @@ jobs:
           files: |
             LICENSE.txt
             target/*.jar
+            target/classes/plugin.json
       - name: Save Maven cache
         uses: skjolber/maven-cache-github-action@v1
         with:
