@@ -21,11 +21,11 @@
 4. (Optional) Use `mvn mindustry:generate-config -Deditor=<editor>`, avilable editors: `vscode`
 4. Bob’s your uncle!
 
-**Note!** `src/resources/plugin.json` contains templates that are used by maven to substitute from pom.xml, no need to edit plugin.json!
+**Note!** [plugin.json](https://github.com/SSTentacleSS/MavenMindustryPluginTemplate/blob/release/src/resources/plugin.json) contains templates that are used by maven to substitute from pom.xml, no need to edit plugin.json!
 
 # Basic Usage
 
-See `src/java/io/github/SSTentacleSS/mindustry/example/Main.java` for some basic commands and event handlers.
+See [Main.java](src/java/io/github/SSTentacleSS/mindustry/example/Main.java) for some basic commands and event handlers.
 Every main plugin class must extend `Plugin`.
 
 # Building a Jar
