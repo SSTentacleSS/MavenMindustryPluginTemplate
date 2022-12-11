@@ -17,12 +17,8 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '16'
-      - name: Restore Maven cache
-        uses: skjolber/maven-cache-github-action@v1
-        with:
-          step: restore
       - name: Build application with Maven
-        run: mvn package
+        run: mvn -B package --file pom.xml
       - name: Set ENV's
         run: |
           echo "RELEASE_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)" >> $GITHUB_ENV
@@ -36,7 +32,3 @@ jobs:
             LICENSE
             target/*.jar
             target/classes/plugin.json
-      - name: Save Maven cache
-        uses: skjolber/maven-cache-github-action@v1
-        with:
-          step: save
