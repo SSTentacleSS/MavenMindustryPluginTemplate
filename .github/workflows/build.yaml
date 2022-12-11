@@ -17,18 +17,10 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '16'
-      - name: Restore Maven cache
-        uses: skjolber/maven-cache-github-action@v1
-        with:
-          step: restore
       - name: Build application with Maven
-        run: mvn package
+        run: mvn -B package --file pom.xml
       - name: Upload Builded Plugin
         uses: actions/upload-artifact@v3
         with:
           name: ${{ github.event.repository.name }}
           path: target/**.jar
-      - name: Save Maven cache
-        uses: skjolber/maven-cache-github-action@v1
-        with:
-          step: save
